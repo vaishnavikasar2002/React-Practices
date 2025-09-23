@@ -1,0 +1,16 @@
+.Product {
+    border: 1px solid black;
+    border-radius: 24px;
+    margin-bottom: 18px;
+    padding: 0 10px 0 10px;
+}
+
+ul {
+  list-style-position: inside; /* point text जवळ येईल */
+  padding-left: 0;  /* left side extra जागा काढून टाकेल */
+  margin-left: 0;
+}
+
+li {
+  margin: 2px 0;  /* वर-खाली थोडी जागा ठेवेल */
+}
