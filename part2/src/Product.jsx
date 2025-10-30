@@ -1,12 +1,13 @@
 import "./Product.css";
 
-//topic :  React Props Properties
+//----topic1 :  React Props Properties
 
-// function Product ( props) {
+// function Product ( props) { // or function Product ({title,price,lang}) as pn write karu shaktat
 //     console.log(props); // print object in console
 //     console.log(props.title); // print title value in console ,eg phone ....
 //     return (
 //         <div className="Product">
+//             {/* show product in output page */}
 //             <h3>{props.title} </h3>
 //             <h5>Price : {props.price}</h5>
 //         </div>
@@ -15,22 +16,24 @@ import "./Product.css";
 
 // -------------------------------------------------------------------------------------------------------------------------------------
 
-// // topic : paasing arrays to props
+//--- topic 2 : paasing arrays to props
 
-// function Product ({title,price,lang}) {
-//     console.log(lang);
+// function Product ({title,price,features,features2}) {
+//     console.log(features);//print array in the console
 //     return (
 //         <div className="Product">
 //             <h3>{title} </h3>
 //             <h5>Price : {price}</h5>
-//             <p>{lang}</p>  
+//             <p>{features}</p>  
+//             <p>{features2.b}</p>
+         
 //         </div>
 //     );
 // } // print a array in console, op is ["samsung", "apple", "1plus"]
 
 // -------------------------------------------------------------------------------------------------------------------------------------------------------
 
-// topic : rendering arrays
+//--- topic3 : rendering arrays
 
 // function Product ({title,price,features}) {
    
@@ -43,7 +46,7 @@ import "./Product.css";
 //     );
 // } 
 
-// or
+//--- or using map method(mostly used method)
 
 // function Product({title,price,features=[]}) {
 //     const list = features.map((feature)=> <li>{feature}</li>);
@@ -53,9 +56,8 @@ import "./Product.css";
 //             <h3>{title}</h3>
 //             <h5>Price : {price}</h5>
 //             <p>{list}</p>
-//             {/* <ul>
-//                 {features.map((item, index) => <li key={index}>{item}</li>)}
-//            </ul> */}
+//             {/* const list varti define n karta khali use kela 91 konta tri comment karaych */}
+//            {/* <p>{features.map((feature)=>(<li>{feature}</li>))}</p>  */}
            
 //         </div>
 //     );
@@ -63,7 +65,7 @@ import "./Product.css";
 
 // ----------------------------------------------------------------------------------------------------------------------------------------------------
 
-// Topic : Conditions - 1st way
+//--- Topic : Conditions - 1st way
 
 // function Product({title,price,features=[]}) {
  
@@ -88,14 +90,14 @@ import "./Product.css";
 
 // or
 
-// topic : conditions - 2nd best way
+//--- topic : conditions - 2nd best way
 
 // function Product({title,price,features=[]}) {
 
 //     let isDiscount = price >30000 ? "Discount of 10%" : ""; //ternary operator
    
 //     return (
-//         <div className="Product" style={abc}>
+//         <div className="Product">
 //             <h3>{title}</h3>
 //             <h5>Price : {price}</h5>
 //             <p>{isDiscount}</p>
@@ -106,10 +108,11 @@ import "./Product.css";
 // }
 
 
-// ------------TOPIC : Dynamic Component Styling--------------------------------------------------------------------------------------------------------
+// ----TOPIC : Dynamic Component Styling--------------------------------------------------------------------------------------------------------
+
 function Product({title,price,features=[]}) {
  
-    let abc= {backgroundColor:price > 30000 ? "pink" : ""};
+    let abc= {backgroundColor:price > 30000 ? "pink" : ""};//backgraund color vr condition apply keli
     let isDiscount = price >30000 ? "Discount of 10%" : ""; //ternary operator
    
     return (

@@ -1,6 +1,6 @@
 import Product from "./Product.jsx";
 
-// topic: react props
+// topic: react props (props he 1 object aahe)
 
 // function ProductList() {
 //     return (
@@ -19,12 +19,13 @@ import Product from "./Product.jsx";
 
 // function ProductList() {
 //   let lang = ["samgsung","apple" ,"1plus"];
+//   let lang2 = {a:"vaishnavi", b:"mauu" , c:"chetan"};
 //     return (
 //         <>
-//           <Product title="phone" price={25000} lang={lang} />
-//           <Product title="laptop" price={750000}/>
-//           <Product title="tv" price={150000}/>
-        
+//           <Product title="phone" price={25000} features={lang} features2={lang2} />
+//           <Product title="laptop" price={750000} features={lang} features2={lang2} />
+//           <Product title="tv" price={150000} features={lang} features2={lang2} />
+
 //       </>
 //     );
 // }
@@ -45,7 +46,7 @@ import Product from "./Product.jsx";
 
 // ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-// topic : rendering arrays , using map
+// topic3 : rendering arrays , using map
 
 // function ProductList() {
 // let lang = ["samsung","apple","oneplus"];
@@ -88,5 +89,8 @@ let lang = ["samsung","apple","oneplus"];
       </>
     );
 }
+
+
+
 
 export default ProductList;
