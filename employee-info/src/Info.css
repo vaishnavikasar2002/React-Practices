@@ -1,0 +1,25 @@
+.body {
+    background-color: pink;
+}
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: nowrap;
+    overflow: auto;
+}
+.Info {
+    
+    width: 250px;
+    padding: 15px;
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: #1e1e1e;
+    flex-shrink: 0;
+    box-shadow: 0 0 10px rgba(255,255,255,0.2);
+    margin: 20px;
+    padding-left: 40px;
+   
+    
+}
