@@ -1,4 +1,4 @@
-#React Day 1
+# React Day 1
 
 1. Introductions - What is react js
 2. Set up local environment 
@@ -7,4 +7,4 @@
 5. Make it first component 
 6. Importing and Exporting
 7. Write markup with jsx
-8. exercise 
+8. Exercise 
